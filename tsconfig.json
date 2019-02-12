@@ -1,7 +1,13 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src",
+    "paths": {
+      "@sumo/*": ["app/*"],
+      "@sumoworker/*": ["app/components/*"],
+      "@sumowork/*": ["app/services/*"],
+      "@sumoclothing/*": ["app/directives/*"]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
